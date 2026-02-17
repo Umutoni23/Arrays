@@ -86,12 +86,12 @@ const products = [
   { id:1, name: "Laptop", price: 999 },
   { id:2, name: "Smartphone", price: 499 },
   { id:3, name: "Tablet", price: 299 },
-  { id:4, name: "Headphones", price: 199 },
+  { id:4, name: "Headphones", price: 1999 },
 ];
 
 // a
 
-let foundproducts = products.find(product => product.name === "2");
+let foundproducts = products.find(product => product.name === "Headphones");
 console.log(foundproducts);
 
 // b
