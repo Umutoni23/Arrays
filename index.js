@@ -37,3 +37,28 @@ console.log(inventory);
 // e
 inventory.splice(1, 1, 25, 35);
 console.log(inventory);
+
+// Exercise 3 : Shallow copying of Arrays and the references trap
+
+// a
+const originalScores = [90, 85, 78];
+
+// b
+const  referenceCopy = originalScores;
+console.log(originalScores);
+
+// c
+referenceCopy[0] = 100;
+console.log("originalScores: ", originalScores);
+console.log("referenceCopy: ", referenceCopy);
+
+// d
+
+const spreadCopy = [...originalScores];
+console.log("Original Scores: ", originalScores);
+console.log("Spread Copy: ", spreadCopy);
+
+// e
+spreadCopy[2] = 50;
+console.log("Original Scores: ", originalScores);
+console.log("Spread Copy: ", spreadCopy);
