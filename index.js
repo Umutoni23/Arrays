@@ -7,7 +7,7 @@ console.log(productCategories[0]);
 console.log(productCategories[productCategories.length - 1]);
 
 // c
-console.log(productCategories[productCategories.length - 1]);
+console.log(productCategories.length);
 
 // d
 productCategories[1] = "pen";
