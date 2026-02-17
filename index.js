@@ -78,3 +78,21 @@ console.log(studentsNames.includes("Charlie"));
 
 // d
 console.log(studentsNames.includes("Eve"));
+
+// Exercise 5: Advanced Searching with fidn and FindIndex
+
+
+const products = [
+  { id:1, name: "Laptop", price: 999 },
+  { id:2, name: "Smartphone", price: 499 },
+  { id:3, name: "Tablet", price: 299 },
+  { id:4, name: "Headphones", price: 199 },
+];
+
+// a
+
+let foundproducts = products.find(product => product.name === "2");
+console.log(foundproducts);
+
+// b
+let foundIndex = products.findIndex(product => product.price === 199);
